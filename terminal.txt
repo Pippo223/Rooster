@@ -1,0 +1,79 @@
+$ npm test
+
+> learn-mocha-intro-start@1.0.0 test /home/ccuser/workspace/learn-mocha-learn-mocha-rooster-regulation
+> mocha test/**/*_test.js
+
+
+
+  Rooster
+    .announceDawn
+      1) returns a rooster call
+
+
+  0 passing (7ms)
+  1 failing
+
+  1) Rooster .announceDawn returns a rooster call:
+
+      AssertionError: 'cock-a-doodle-doo!' == 'moo!'
+      + expected - actual
+
+      -cock-a-doodle-doo!
+      +moo!
+      
+      at Context.it (test/index_test.js:9:12)
+
+
+
+npm ERR! Test failed.  See above for more details.
+
+//Testing Rooster call = moo!
+$ npm test
+
+> learn-mocha-intro-start@1.0.0 test /home/ccuser/workspace/learn-mocha-learn-mocha-rooster-regulation
+> mocha test/**/*_test.js
+
+
+
+  Rooster
+    .announceDawn
+      ✓ returns a rooster call
+
+
+  1 passing (6ms)
+
+  //Testing .timeAtDawn
+  $ npm test
+
+> learn-mocha-intro-start@1.0.0 test /home/ccuser/workspace/learn-mocha-learn-mocha-rooster-regulation
+> mocha test/**/*_test.js
+
+
+
+  Rooster
+    .announceDawn
+      ✓ returns a rooster call
+    .timeAtDawn
+      ✓ returns its argument as a string
+
+
+  2 passing (6ms) 
+
+  //Testing Rangeerror
+  $ npm test
+
+> learn-mocha-intro-start@1.0.0 test /home/ccuser/workspace/learn-mocha-learn-mocha-rooster-regulation
+> mocha test/**/*_test.js
+
+
+
+  Rooster
+    .announceDawn
+      ✓ returns a rooster call
+    .timeAtDawn
+      ✓ returns its argument as a string
+      ✓ throws an error if passed a number less than 0
+      ✓ throws an error if passed a number greater than 23
+
+
+  4 passing (6ms)
